@@ -5,7 +5,10 @@ public class Calculator {
 
     // Calling function that chooses calculator A or B
     public static void main(String args[]) {
-        chooseCalculatorType();
+        while (true) {
+            chooseCalculatorType();
+        }
+
     }
 
     // choosing calculator A or B and calls functions calculatorB and calculatorA
