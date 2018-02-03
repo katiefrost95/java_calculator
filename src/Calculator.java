@@ -64,35 +64,47 @@ public class Calculator {
         // Advanced calculator
     private static void calculatorA() {
         String function;
-        String firstNum;
-        String secondNum;
         // catching user input in console
         Scanner in = new Scanner(System.in);
         // selecting function
         System.out.println("What function would you like to use? Type s for square root and p to find the power of: ");
         function = in.nextLine();
-        // finding the power of
+        // Calling the square root and power of functions
         if (function.equals("p")) {
-            // first number
-            System.out.println("Please enter your first number");
-            firstNum = in.nextLine();
-            // second number
-            System.out.println("Please enter your second number");
-            secondNum = in.nextLine();
-            // result
-            float result = (float) Math.pow(Float.parseFloat(firstNum), Float.parseFloat(secondNum));
-            System.out.println("The answer is " + result);
-            // Finding the square root
+            powerOf();
         } else if (function.equals("s")) {
-            //number to square root
-            System.out.println("Please enter the number you want to square root: ");
-            firstNum = in.nextLine();
-            float result = (float) Math.sqrt(Float.parseFloat(firstNum));
-            System.out.println("The answer is " + result);
+            squareRoot();
         } else {
-            System.out.println("This is invalid");
+            System.out.println("This options is invalid");
         }
 
+    }
+    // Function to calculate the power of
+    private static void powerOf() {
+        String firstNum;
+        String secondNum;
+        // catching user input in console
+        Scanner in = new Scanner(System.in);
+        // first number
+        System.out.println("Please enter your first number");
+        firstNum = in.nextLine();
+        // second number
+        System.out.println("Please enter your second number");
+        secondNum = in.nextLine();
+        // result
+        float result = (float) Math.pow(Float.parseFloat(firstNum), Float.parseFloat(secondNum));
+        System.out.println("The answer is " + result);
+    }
+    // Function to calculate the square root
+    private static void squareRoot(){
+        String firstNum;
+        // catching user input in console
+        Scanner in = new Scanner(System.in);
+        //number to square root
+        System.out.println("Please enter the number you want to square root: ");
+        firstNum = in.nextLine();
+        float result = (float) Math.sqrt(Float.parseFloat(firstNum));
+        System.out.println("The answer is " + result);
     }
 
 }
