@@ -10,7 +10,6 @@ public class Calculator {
         }
 
     }
-
     // choosing calculator A or B and calls functions calculatorB and calculatorA
     private static void chooseCalculatorType() {
         String whichCalc;
@@ -27,7 +26,6 @@ public class Calculator {
             System.out.println("This option is invalid");
         }
     }
-
     //basic calculator
     private static void calculatorB() {
         String function;
@@ -61,7 +59,7 @@ public class Calculator {
             System.out.println("This is invalid");
         }
     }
-        // Advanced calculator
+    // Advanced calculator
     private static void calculatorA() {
         String function;
         // catching user input in console
@@ -79,7 +77,7 @@ public class Calculator {
         }
 
     }
-    // Function to calculate the power of
+    // Function to calculate the power of for advanced calculator
     private static void powerOf() {
         String firstNum;
         String secondNum;
@@ -95,7 +93,7 @@ public class Calculator {
         float result = (float) Math.pow(Float.parseFloat(firstNum), Float.parseFloat(secondNum));
         System.out.println("The answer is " + result);
     }
-    // Function to calculate the square root
+    // Function to calculate the square root for advanced calculator
     private static void squareRoot(){
         String firstNum;
         // catching user input in console
